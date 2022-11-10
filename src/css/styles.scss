@@ -1,45 +1,71 @@
-// Load CSS Reset from NPM
-// CSS resets "normalize" how browser styles are applied.
-// Try commenting this out and saving. What changes in the browser?
-@import "~normalize.css";
 
-// An example of a partial.
-// Check out the _typography.scss file to edit the CSS inside!
-@import "typography";
+ul::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-top: solid 50px #e9c4bc;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 1;
+}
 
-// You can still write styles in this file too.
-// Here's an example of how you could write media queries more easily with Sass.
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
 
-$large-phone: 500px;
-$tablet-vertical: 768px;
-$desktop: 1200px;
+li {
+	float: right;
+}
 
-// And some color variables.
-// Look how much easier it is to keep track of what these are than hex codes!
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: 'Inria Sans', sans-serif;
+}
 
-$red: #ab424a;
-$orange: #dd7c00;
-$green: #3b975f;
-$blue: #4261ab;
+body {
+	background-color: #f9f8f4;
+}
 
-.page-heading {
-	color: $red;
+h1 {
+	text-align: center;
+	font-weight: 100;
+	padding-top: 30px;
+}
 
-	// Sass lets you write your media queries inline if you want.
-	// This is why I'm always forgetting I have to put the class inside
-	// the media query in regular CSS. I never have to in Sass!
-	// I like combining these with variables to make it easier to read
-	// my media queries.
+section {
+	background-color: #e9c4bc;
+	padding: 12px;
+	border-radius: 15px 15px 15px 15px;
+	max-width: 1200px;
+	margin: auto;
+}
 
-	@media screen and (min-width: $large-phone) {
-		color: $orange;
-	}
+h2 {
+	text-align: center;
+}
 
-	@media screen and (min-width: $tablet-vertical) {
-		color: $green;
-	}
+p {
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Inria Sans', sans-serif;
+}
 
-	@media screen and (min-width: $desktop) {
-		color: $blue;
-	}
+.image {
+	text-align: center;
+	padding-top: 20px;
+	margin: auto;
+	max-width: 1200px;
+}
+
+img {
+	border-radius: 20px 20px 20px 20px;
 }
