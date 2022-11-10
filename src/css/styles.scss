@@ -9,7 +9,7 @@
 	z-index: 1;
 }
 
-ul {
+.nav_home {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -30,11 +30,11 @@ li a {
 	font-family: 'Inria Sans', sans-serif;
 }
 
-.home{
+.home {
 	background-color: #f9f8f4;
 }
 
-h1 {
+.heading {
 	text-align: center;
 	font-weight: 100;
 	padding-top: 30px;
@@ -48,11 +48,11 @@ section {
 	margin: auto;
 }
 
-.about{
+.about {
 	text-align: center;
 }
 
-.homepage{
+.homepage {
 	text-align: center;
 	font-size: 1em;
 	font-family: 'Inria Sans', sans-serif;
@@ -68,6 +68,7 @@ section {
 .fashion {
 	border-radius: 20px 20px 20px 20px;
 }
+
 /*
 // Load CSS Reset from NPM
 // CSS resets "normalize" how browser styles are applied.
