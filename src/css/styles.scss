@@ -70,6 +70,38 @@ section {
 	border-radius: 20px 20px 20px 20px;
 }
 
+@media screen and (max-width: 850px) {
+	.nav_home::after {
+		top: 30px;
+		border-top: solid 25px #e9c4bc;
+		margin-top: 6px;
+	}
+
+	li a {
+		font-size: 1em;
+	}
+
+	.heading {
+		font-size: 2em;
+	}
+
+	.homepage {
+		font-size: 0.8em;
+	}
+
+	.about {
+		font-size: 1em;
+	}
+
+	.fashion {
+		max-width: 600px;
+	}
+
+	.description {
+		max-width: 500px;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	.nav_home::after {
 		top: 30px;
@@ -91,10 +123,13 @@ section {
 
 	.about {
 		font-size: 1em;
-		max-width: 400px;
 	}
 
 	.fashion {
-		max-width: 350px;
+		max-width: 300px;
+	}
+
+	.description {
+		max-width: 300px;
 	}
 }
