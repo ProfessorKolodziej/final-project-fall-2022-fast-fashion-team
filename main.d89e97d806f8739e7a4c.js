@@ -1,0 +1,1 @@
+(()=>{var e;"yes"===(e=prompt("Type yes to proceed to our website"))?alert("Welcome to our website"):"yes"!==e&&alert("Sorry, try again")})();
