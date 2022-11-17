@@ -5,7 +5,6 @@ if (counter <= images.length) {
 	setInterval(() => {
 		images[0].src = images[counter].src;
 		console.log(images[counter].src);
-		counter++;
 
 		if (counter === images.length) {
 			counter = 1;
