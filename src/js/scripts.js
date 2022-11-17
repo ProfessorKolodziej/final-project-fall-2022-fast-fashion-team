@@ -1,6 +1,14 @@
-const welcome = prompt('Type yes to proceed to our website');
-if (welcome === 'yes') {
-	alert('Welcome to our website');
-} else if (welcome !== 'yes') {
-	alert('Sorry, try again');
+const img = document.getElementById('slidewrap');
+const images = img.getElementsByTagName('img');
+let counter = 1;
+if (counter <= images.length) {
+	setInterval(() => {
+		images[0].src = images[counter].src;
+		console.log(images[counter].src);
+		counter++;
+
+		if (counter === images.length) {
+			counter = 1;
+		}
+	}, 1500);
 }

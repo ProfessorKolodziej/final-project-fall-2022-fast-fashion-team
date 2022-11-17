@@ -59,15 +59,20 @@ section {
 	font-family: 'Inria Sans', sans-serif;
 }
 
-.image {
-	text-align: center;
-	padding-top: 20px;
-	margin: auto;
-	max-width: 1200px;
+.fashion {
+	border-radius: 50px 50px 50px 50px;
+    max-width: 1000px;
+    text-align: center;
+    padding-top: 30px;
+	max-height: 400px;
 }
 
-.fashion {
-	border-radius: 20px 20px 20px 20px;
+#slidewrap{
+	text-align: center;
+}
+
+#images {
+	display:none;
 }
 
 @media screen and (max-width: 850px) {
@@ -90,7 +95,7 @@ section {
 	}
 
 	.about {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 	.fashion {
@@ -126,7 +131,7 @@ section {
 	}
 
 	.fashion {
-		max-width: 300px;
+		max-width: 200px;
 	}
 
 	.description {
