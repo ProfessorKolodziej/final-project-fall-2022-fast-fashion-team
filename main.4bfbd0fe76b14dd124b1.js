@@ -1,0 +1,1 @@
+(()=>{var e,t;e=document.getElementById("slidewrap").getElementsByTagName("img"),(t=1)<=e.length&&setInterval((function(){e[0].src=e[t].src,console.log(e[t].src),t===e.length&&(t=1)}),1500)})();
