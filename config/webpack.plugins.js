@@ -8,7 +8,6 @@ const WebpackBar = require('webpackbar');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
@@ -51,25 +50,6 @@ const generateHTMLPlugins = () => glob.sync('./src/**/*.html').map((dir) => {
   });
 });
 
-// Favicons
-const favicons = new FaviconsWebpackPlugin({
-  logo: config.favicon,
-  prefix: 'images/favicons/',
-  favicons: {
-    developerName: null,
-    developerURL: null,
-    icons: {
-      android: true,
-      appleIcon: true,
-      appleStartup: false,
-      coast: false,
-      favicons: true,
-      firefox: false,
-      windows: false,
-      yandex: false,
-    },
-  },
-});
 
 // Webpack bar
 const webpackBar = new WebpackBar({
@@ -81,7 +61,6 @@ module.exports = [
   stylelint,
   cssExtract,
   ...generateHTMLPlugins(),
-  fs.existsSync(config.favicon) && favicons,
   config.env === 'production' && optimizeCss,
   webpackBar,
   config.env === 'development' && hmr,
