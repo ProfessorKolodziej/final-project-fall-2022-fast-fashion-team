@@ -1,9 +1,11 @@
-/* Header section */
-.container {
-	width: 100%;
-	margin: auto;
-
-	/* (top, right, bottom, left) Note: use auto to horizontally center the element within its container. */
+a,
+a:hover,
+a:focus {
+	text-decoration: underline;
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #000;
+	font-size: 1.5em;
 }
 
 .navbar {
@@ -30,4 +32,27 @@
 	margin-bottom: 1rem;
 }
 
-/* End of header section */
+.topbaritems {
+	display: grid;
+	grid-template-columns: 10fr 10fr 10fr 10fr 10fr;
+	justify-items: center;
+	font-family: 'Inria Serif', 'Roboto', serif;
+	color: #323536;
+	font-size: 140%;
+}
+
+.topbar-subhead-2 {
+	margin-top: 6%;
+}
+
+.topbar-subhead-3 {
+	margin-top: 6%;
+}
+
+.topbar-subhead-4 {
+	margin-top: 6%;
+}
+
+.page-title {
+	align-items: center;
+}
