@@ -1,5 +1,5 @@
 body {
-	font-family: 'Inria Serif';
+	font-family: 'Inria Serif', 'Roboto', serif;
 	color: #0c0c0c;
 	background-color: #fff;
 	overflow-x: hidden;
@@ -43,7 +43,7 @@ a:focus {
 }
 
 .navbar-brand {
-	font-family: 'Inria serif';
+	font-family: 'Inria', 'Roboto', serif;
 	text-decoration: none;
 	margin: 0;
 	font-weight: bold;
@@ -79,7 +79,6 @@ a:focus {
 	flex-grow: 1;
 	width: 10%;
 	padding: 0;
-	text-align: center;
 	position: relative;
 	overflow: hidden;
 	height: 100%;
