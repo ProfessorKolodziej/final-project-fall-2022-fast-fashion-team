@@ -1,24 +1,33 @@
-.topbaritems {
-	display: grid;
-	grid-template-columns: 10fr 10fr 10fr 10fr 10fr;
-	justify-items: center;
-	font-family: 'Inria Serif', 'Roboto', serif;
-	color: #323536;
-	font-size: 140%;
+/* Header section */
+.container {
+	width: 100%;
+	margin: auto;
+
+	/* (top, right, bottom, left) Note: use auto to horizontally center the element within its container. */
 }
 
-.topbar-subhead-2 {
-	margin-top: 6%;
-}
-
-.topbar-subhead-3 {
-	margin-top: 6%;
-}
-
-.topbar-subhead-4 {
-	margin-top: 6%;
-}
-
-.page-title {
+.navbar {
+	position: relative;
+	display: flex;
+	margin: auto;
+	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0;
 }
+
+.navbar-brand {
+	font-family: 'Inria', 'Roboto', serif;
+	text-decoration: none;
+	margin: 0;
+	font-weight: bold;
+	font-size: xx-large;
+	margin-right: 2.5rem;
+}
+
+.navbar-brand p {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+/* End of header section */
