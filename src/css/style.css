@@ -1,0 +1,196 @@
+body {
+  font-family: 'Inria Serif';
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: underline;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000000;
+}
+
+.resources {
+  text-align: center;
+  font-size: xx-large;
+}
+
+.resourceDetails {
+  text-align: center;
+  font-size: large;
+}
+
+/*Header section*/
+.container {
+  width: 100%;
+  margin: auto;
+  /*(top, right, bottom, left) Note: use auto to horizontally center the element within its container.*/
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+}
+
+.navbar-brand {
+  font-family: 'Inria serif';
+  text-decoration: none;
+  margin: 0rem;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-right: 2.5rem;
+}
+
+.navbar-brand p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/*End of header section*/
+
+/*About Section Starts*/
+.about-section {
+  padding: 30px 90px;
+  background-color: #E9C4BC;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.lCol {
+  text-align: center;
+  flex-grow: 1;
+  width: 10%;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background-color: #DF8D8C;
+}
+
+.rCol {
+  max-width: 60%;
+  margin: 0 auto;
+  font-size: x-large;
+  width: 50%;
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+  text-align: center;
+}
+
+/*End of About Section*/
+
+/*Service Section*/
+.service-section {
+  padding: 30px 90px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.row {
+  display: flex;
+  margin: 0rem -1rem;
+  text-align: center;
+}
+
+.service-section .box {
+  margin: 2rem;
+  text-align: center;
+  margin-top: 2.875rem;
+}
+
+.service-section .box .img-box img {
+  width: 100%;
+}
+
+.service-section .box .detail-box {
+  padding: 25px;
+  background: #E9C4BC;
+  color: #000000;
+}
+
+.service-section .box .detail-box p {
+  font-size: 1.8rem;
+}
+
+/*end of service section*/
+
+/* Media queries for responsivenss*/
+@media (min-width: 75px) and (max-width: 575px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .service-section .box .detail-box p {
+    font-size: 0.7rem;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .row {
+    display: block;
+    margin: 0rem -1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .service-section .box .detail-box p {
+    font-size: 1rem;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .row {
+    display: block;
+    margin: 0rem -1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .service-section .box .detail-box p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* End of file*/
