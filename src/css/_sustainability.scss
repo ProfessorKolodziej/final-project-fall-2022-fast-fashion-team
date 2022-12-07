@@ -1,5 +1,39 @@
+a,
+a:hover,
+a:focus {
+	text-decoration: underline;
+	display: block;
+	padding: 0.5rem 1rem;
+	color: #000;
+	font-size: 1.5em;
+}
+
+.navbar {
+	position: relative;
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+}
+
+.navbar-brand {
+	font-family: 'Inria', 'Roboto', serif;
+	text-decoration: none;
+	margin: 0;
+	font-weight: bold;
+	font-size: xx-large;
+	margin-right: 2.5rem;
+}
+
+.navbar-brand p {
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
 body {
-    background: white;
+	background: white;
 	margin: 0;
 	padding: 0;
 }
